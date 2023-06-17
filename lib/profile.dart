@@ -50,17 +50,6 @@ class Profile extends StatelessWidget {
           final daysPassed = DateTime.now().difference(DateTime.parse(results[0]['registered']['date'])).inDays;
           final imageUrl = results[0]['picture']['thumbnail'];
 
-          /*return Column(
-            children: [
-              Text('Name: $name'),
-              Text('Location: $location'),
-              Text('Email: $email'),
-              Text('Date of Birth: $dob'),
-              Text('Days Passed since Registered: $daysPassed'),
-              Image.network(imageUrl),
-            ],
-          );*/
-
           return Material(
             type: MaterialType.transparency,
             child: Stack(
